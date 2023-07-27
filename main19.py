@@ -4,9 +4,18 @@
 # положительное число.
 # Input: [1, 2, 3, 4, 5] k = 3
 # Output: [4, 5, 1, 2, 3]
+from random import randint as rd # alias (псевдоним)
 
-list_1 = [ int(i) for i in input().split( )]
+n = int(input("Введите количество элементов в списке: "))
+data_list = list()
+for i in range(n):
+    data_list.append(rd(0, 10))
+print(data_list)
+
+
 step = int (input("введите количество сдвигов: "))
-step = step % len(list_1)
-result_list = [list_1 [i - step] for i in range(len(list_1))]
+step = step % len(data_list)
+result_list = data_list
+for i in range(len(data_list)):
+    result_list[i] = data_list[i - step] 
 print (result_list)
