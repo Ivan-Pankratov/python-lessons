@@ -1,0 +1,18 @@
+from random import randint as rd # alias (псевдоним)
+print("Программа выводит упорядоченное пересечение двух наборов целых чисел.")
+n = int(input("Введите количество элементов в 1 наборе: "))
+list_1 = list()
+for i in range(n):
+    list_1.append(input("Введите целое число: "))
+k = int(input("Введите количество элементов в 2 наборе: "))
+list_2 = list()
+for i in range(k):
+    list_2.append(input("Введите целое число: "))
+print(list_1)
+print(list_2)
+list_1 = set(list_1)
+list_2 = set(list_2)
+result = list_1.intersection(list_2)
+result = list(result)
+result.sort()
+print(result)
