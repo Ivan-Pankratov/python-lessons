@@ -20,9 +20,10 @@ def summary (a : int):
 def number(word: str):
     result = 0
     lit = ("а", "у", "е", "ы", 'о', 'э', 'я', 'и', 'ю', 'ё')
-    word.lower
+    word = word.lower()
     for elem in lit:
         result += word.count(elem)
+    print(result)
     return result
 
 st = input("Введите стишок Винни-пуха: ")
