@@ -23,7 +23,6 @@ def number(word: str):
     word = word.lower()
     for elem in lit:
         result += word.count(elem)
-    print(result)
     return result
 
 st = input("Введите стишок Винни-пуха: ")
