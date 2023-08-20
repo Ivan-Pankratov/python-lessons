@@ -13,9 +13,11 @@
 
 def summary (a : int):
     if a == 1 :
+        print("Стих получился!")
         print("Парам пам-пам")
     else:
-        print("Пам парам")
+        print("Не стих")
+        print("Пум пурум")
 
 def number(word: str):
     result = 0

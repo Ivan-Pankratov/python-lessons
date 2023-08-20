@@ -6,4 +6,4 @@ while count_del == 0 and i <= n // 2:
     if n % i == 0:
         count_del += 1
     i += 1
-print("yes" if count_del == 0 else "no")
+print("простое" if count_del == 0 else "составное")

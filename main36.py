@@ -31,11 +31,11 @@ def print_operation_table(operation, x, y):
         print(" ")
 
 
-x=6
-y=6
+x=10
+y=3
 print_operation_table(operation1, x, y)
-print()
+# print()
 # print_operation_table(operation2, x, y)
 # print()
-print_operation_table(operation3, x, y)
+# print_operation_table(operation3, x, y)
     
